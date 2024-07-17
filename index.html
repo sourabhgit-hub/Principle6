@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Principle 6 Essential Indicators</h1>
+    <div class="Container">
+
+        <!-- Question 1 -->
+        <p class="Question">1. Details of total energy consumption (in Joules or multiples) and energy intensity, in the following format:</p>
+        <form id="question1-form">
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>FY ____<br>(Current Financial Year)</th>
+                    <th>FY ____<br>(Previous Financial Year)</th>
+                </tr>
+                <tr>
+                    <td>Total electricity consumption (A)</td>
+                    <td><input type="text" name="current_year_electricity"></td>
+                    <td><input type="text" name="previous_year_electricity"></td>
+                </tr>
+                <tr>
+                    <td>Total fuel consumption (B)</td>
+                    <td><input type="text" name="current_year_fuel"></td>
+                    <td><input type="text" name="previous_year_fuel"></td>
+                </tr>
+                <tr>
+                    <td>Energy consumption through other sources (C)</td>
+                    <td><input type="text" name="current_year_other_sources"></td>
+                    <td><input type="text" name="previous_year_other_sources"></td>
+                </tr>
+                <tr>
+                    <th>Total energy consumption<br>(A+B+C)</th>
+                    <td><input type="text" name="current_year_total"></td>
+                    <td><input type="text" name="previous_year_total"></td>
+                </tr>
+                <tr>
+                    <td>Energy intensity per rupee of turnover<br>(Total energy consumption / turnover in rupees)</td>
+                    <td><input type="text" name="current_year_intensity"></td>
+                    <td><input type="text" name="previous_year_intensity"></td>
+                </tr>
+                <tr>
+                    <td>Energy intensity (optional) – the relevant metric may be selected by the entity</td>
+                    <td><input type="text" name="current_year_optional_intensity"></td>
+                    <td><input type="text" name="previous_year_optional_intensity"></td>
+                </tr>
+            </table>
+        </form>
+        <p class="Note">Note: Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? (Y/N) If yes, name of the external agency.</p>
+        
+        <!-- Question 2 -->
+        <p class="Question">2. Does the entity have any sites / facilities identified as designated consumers (DCs) under the Performance, Achieve and Trade (PAT) Scheme of the Government of India? (Y/N) If yes, disclose whether targets set under the PAT scheme have been achieved. In case targets have not been achieved, provide the remedial action taken, if any.</p>
+        <textarea name="external_agency" id="question2-textarea"></textarea>
+
+        <!-- Question 3 -->
+        <p class="Question">3. Provide details of the following disclosures related to water, in the following format:</p>
+        <form id="question3-form">
+            <table id="water_disclosures_table" class="disclosures_table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>FY ____<br>(Current Financial Year)</th>
+                        <th>FY ____<br>(Previous Financial Year)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">Water withdrawal by source (in kilolitres)</td>
+                    </tr>
+                    <tr>
+                        <td>(i) Surface water</td>
+                        <td><input type="text" name="current_year_surface_water" class="input_field"></td>
+                        <td><input type="text" name="previous_year_surface_water" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>(ii) Groundwater</td>
+                        <td><input type="text" name="current_year_groundwater" class="input_field"></td>
+                        <td><input type="text" name="previous_year_groundwater" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>(iii) Third party water</td>
+                        <td><input type="text" name="current_year_third_party_water" class="input_field"></td>
+                        <td><input type="text" name="previous_year_third_party_water" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>(iv) Seawater / desalinated water</td>
+                        <td><input type="text" name="current_year_seawater" class="input_field"></td>
+                        <td><input type="text" name="previous_year_seawater" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>(v) Others</td>
+                        <td><input type="text" name="current_year_others" class="input_field"></td>
+                        <td><input type="text" name="previous_year_others" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <th>Total volume of water withdrawal<br>(in kilolitres) (i + ii + iii + iv + v)</th>
+                        <td><input type="text" name="current_year_total_withdrawal" class="input_field"></td>
+                        <td><input type="text" name="previous_year_total_withdrawal" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <th>Total volume of water consumption<br>(in kilolitres)</th>
+                        <td><input type="text" name="current_year_total_consumption" class="input_field"></td>
+                        <td><input type="text" name="previous_year_total_consumption" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>Water intensity per rupee of turnover<br>(Water consumed / turnover)</td>
+                        <td><input type="text" name="current_year_intensity" class="input_field"></td>
+                        <td><input type="text" name="previous_year_intensity" class="input_field"></td>
+                    </tr>
+                    <tr>
+                        <td>Water intensity (optional) - the relevant metric may be selected by the entity</td>
+                        <td><input type="text" name="current_year_optional_intensity" class="input_field"></td>
+                        <td><input type="text" name="previous_year_optional_intensity" class="input_field"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <p class="Note">Note: Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? (Y/N) If yes, name of the external agency.</p>
+
+        <!-- Question 4 -->
+        <p class="Question">4. Has the entity implemented a mechanism for Zero Liquid Discharge? If yes, provide details of its coverage and implementation.</p>
+        <textarea id="question4-textarea" name="external_agency"></textarea>
+
+
+        <!-- Question 5 -->
+        <p class="Question">5. Please provide details of air emissions (other than GHG emissions) by the entity, in the following format:</p>
+        <form id="question5-form">
+            <table id="emissions-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Please specify unit</th>
+                    <th>FY ____<br>(Current Financial Year)</th>
+                    <th>FY ____<br>(Previous Financial Year)</th>
+                </tr>
+                <tr>
+                    <td>NOx</td>
+                    <td><input type="text" name="nox_unit"></td>
+                    <td><input type="text" name="nox_current_year"></td>
+                    <td><input type="text" name="nox_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>SOx</td>
+                    <td><input type="text" name="sox_unit"></td>
+                    <td><input type="text" name="sox_current_year"></td>
+                    <td><input type="text" name="sox_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Particulate matter (PM)</td>
+                    <td><input type="text" name="pm_unit"></td>
+                    <td><input type="text" name="pm_current_year"></td>
+                    <td><input type="text" name="pm_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Persistent organic pollutants (POP)</td>
+                    <td><input type="text" name="pop_unit"></td>
+                    <td><input type="text" name="pop_current_year"></td>
+                    <td><input type="text" name="pop_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Volatile organic compounds (VOC)</td>
+                    <td><input type="text" name="voc_unit"></td>
+                    <td><input type="text" name="voc_current_year"></td>
+                    <td><input type="text" name="voc_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Hazardous air pollutants (HAP)</td>
+                    <td><input type="text" name="hap_unit"></td>
+                    <td><input type="text" name="hap_current_year"></td>
+                    <td><input type="text" name="hap_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Others - please specify</td>
+                    <td><input type="text" name="others_unit"></td>
+                    <td><input type="text" name="others_current_year"></td>
+                    <td><input type="text" name="others_previous_year"></td>
+                </tr>
+            </table>
+        </form>
+        <p class="Note">Note: Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? (Y/N) If yes, name of the external agency.</p>
+
+        <!-- Question 6 -->
+        <p class="Question">6. Provide details of greenhouse gas emissions (Scope 1 and Scope 2 emissions) & its intensity, in the following format:</p>
+        <form id="question6-form">
+            <table id="ghg-emissions-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>Unit</th>
+                    <th>FY ____<br>(Current Financial Year)</th>
+                    <th>FY ____<br>(Previous Financial Year)</th>
+                </tr>
+                <tr>
+                    <td>Total Scope 1 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) Metric tonnes of CO2 equivalent</td>
+                    <td>Metric tonnes of CO2 equivalent</td>
+                    <td><input type="text" name="scope1_current_year"></td>
+                    <td><input type="text" name="scope1_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total Scope 2 emissions (Break-up of the GHG into CO2, CH4, N2O, HFCs, PFCs, SF6, NF3, if available) Metric tonnes of CO2 equivalent</td>
+                    <td>Metric tonnes of CO2 equivalent</td>
+                    <td><input type="text" name="scope2_current_year"></td>
+                    <td><input type="text" name="scope2_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total Scope 1 and Scope 2 emissions per rupee of turnover</td>
+                    <td><input type="text" name="emission_per_rupee_unit"></td>
+                    <td><input type="text" name="emission_per_rupee_current_year"></td>
+                    <td><input type="text" name="emission_per_rupee_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total Scope 1 and Scope 2 emission intensity (optional) - the relevant metric may be selected by the entity</td>
+                    <td><input type="text" name="emission_intensity_unit"></td>
+                    <td><input type="text" name="emission_intensity_current_year"></td>
+                    <td><input type="text" name="emission_intensity_previous_year"></td>
+                </tr>
+            </table>
+        </form>
+        <p class="Note">Note: Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? (Y/N) If yes, name of the external agency.</p>
+
+        <!-- Question 7 -->
+        <p class="Question">7. Does the entity have any project related to reducing Green House Gas emission? If Yes, then provide details.</p>
+        <textarea id="question7-textarea" name="external_agency"></textarea>
+
+
+        <!-- Question 8 -->
+        <p class="Question">8. Provide details related to waste management by the entity, in the following format:</p>
+        <form id="question8-form">
+            <table id="waste-management-table">
+                <tr>
+                    <th>Parameter</th>
+                    <th>FY ____<br>(Current Financial Year)</th>
+                    <th>FY ____<br>(Previous Financial Year)</th>
+                </tr>
+                <tr>
+                    <td colspan="3">Water withdrawal by source (in kilolitres)</td>
+                </tr>
+                <tr>
+                    <td>Plastic waste (A)</td>
+                    <td><input type="text" name="plastic_current_year"></td>
+                    <td><input type="text" name="plastic_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>TE-waste (B)</td>
+                    <td><input type="text" name="te_waste_current_year"></td>
+                    <td><input type="text" name="te_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Bio-medical waste (C)</td>
+                    <td><input type="text" name="bio_medical_current_year"></td>
+                    <td><input type="text" name="bio_medical_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Construction and demolition waste (D)</td>
+                    <td><input type="text" name="construction_waste_current_year"></td>
+                    <td><input type="text" name="construction_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Battery waste (E)</td>
+                    <td><input type="text" name="battery_waste_current_year"></td>
+                    <td><input type="text" name="battery_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Radioactive waste (F)</td>
+                    <td><input type="text" name="radioactive_waste_current_year"></td>
+                    <td><input type="text" name="radioactive_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Other Hazardous waste. Please specify, if any. (G)</td>
+                    <td><input type="text" name="other_hazardous_waste_current_year"></td>
+                    <td><input type="text" name="other_hazardous_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Other Non-hazardous waste generated (H). Please specify, if any. (Break-up by composition i.e. by materials relevant to the sector)</td>
+                    <td><input type="text" name="other_non_hazardous_waste_current_year"></td>
+                    <td><input type="text" name="other_non_hazardous_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total (A + B + C + D + E + F + G + H)</td>
+                    <td><input type="text" name="total_waste_current_year"></td>
+                    <td><input type="text" name="total_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">For each category of waste generated, total waste recovered through recycling, re-using or other recovery operations (in metric tonnes)</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Category of waste</td>
+                </tr>
+                <tr>
+                    <td>(i) Recycled</td>
+                    <td><input type="text" name="recycled_waste_current_year"></td>
+                    <td><input type="text" name="recycled_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>(ii) Re-used</td>
+                    <td><input type="text" name="reused_waste_current_year"></td>
+                    <td><input type="text" name="reused_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>(iii) Other recovery operations</td>
+                    <td><input type="text" name="other_recovery_operations_current_year"></td>
+                    <td><input type="text" name="other_recovery_operations_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" name="total_recovery_current_year"></td>
+                    <td><input type="text" name="total_recovery_previous_year"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">For each category of waste generated, total waste disposed by nature of disposal method (in metric tonnes)</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Category of waste</td>
+                </tr>
+                <tr>
+                    <td>(i) Incineration</td>
+                    <td><input type="text" name="incineration_waste_current_year"></td>
+                    <td><input type="text" name="incineration_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>(ii) Landfilling</td>
+                    <td><input type="text" name="landfilling_waste_current_year"></td>
+                    <td><input type="text" name="landfilling_waste_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>(iii) Other disposal operations</td>
+                    <td><input type="text" name="other_disposal_operations_current_year"></td>
+                    <td><input type="text" name="other_disposal_operations_previous_year"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" name="total_disposal_current_year"></td>
+                    <td><input type="text" name="total_disposal_previous_year"></td>
+                </tr>               
+            </table>
+        </form>
+        <p class="Note">Note: Indicate if any independent assessment/evaluation/assurance has been carried out by an external agency? (Y/N) If yes, name of the external agency.</p>
+        
+
+        <!-- Question 9 -->
+        <p class="Question">9. Briefly describe the waste management practices adopted in your establishments. Describe the strategy adopted by your company to reduce usage of hazardous and toxic chemicals in your products and processes and the practices adopted to manage such wastes.</p>
+        <textarea id="question9-textarea" name="external_agency"></textarea>
+
+
+        <!-- Question 10 -->
+        <p class="Question">10. If the entity has operations/offices in/around ecologically sensitive areas (such as national parks, wildlife sanctuaries, biosphere reserves, wetlands, biodiversity hotspots, forests, coastal regulation zones etc.) where environmental approvals / clearances are required, please specify details in the following format:</p>
+        <form id="question10-form">
+            <table id="complianceTable1">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Location of operations/offices</th>
+                    <th>Type of operations</th>
+                    <th>Whether the conditions of environmental approval / clearance are being complied with? (Y/N) If no, the reasons thereof and corrective action taken, if any.</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="sno[]"></td>
+                    <td><input type="text" name="location[]"></td>
+                    <td><input type="text" name="type_of_operations[]"></td>
+                    <td><input type="text" name="compliance_status[]"></td>
+                </tr>
+            </table>
+            <button type="button" onclick="addRow('complianceTable1')">Add Row</button>
+        </form>
+        
+
+        <!-- Question 11 -->
+        <p class="Question">11. Details of environmental impact assessments of projects undertaken by the entity based on applicable laws, in the current financial year:</p>
+        <form id="question11-form">
+            <table id="eiaTable">
+                <tr>
+                    <th>Name and brief details of project</th>
+                    <th>EIA Notification No.</th>
+                    <th>Date</th>
+                    <th>Whether conducted by independent external agency (Yes / No)</th>
+                    <th>Results communicated in public domain (Yes / No)</th>
+                    <th>Relevant Web link</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="project_details[]"></td>
+                    <td><input type="text" name="eia_notification[]"></td>
+                    <td><input type="text" name="date[]"></td>
+                    <td><input type="text" name="external_agency[]"></td>
+                    <td><input type="text" name="public_domain[]"></td>
+                    <td><input type="text" name="web_link[]"></td>
+                </tr>
+            </table>
+            <button type="button" onclick="addRow('eiaTable')">Add Row</button>
+        </form>
+             
+        <!-- Question 12 -->
+        <p class="Question">Is the entity compliant with the applicable environmental law/ regulations/ guidelines in India; such as the Water (Prevention and Control of Pollution) Act, Air (Prevention and Control of Pollution) Act, Environment protection act and rules thereunder (Y/N). If not, provide details of all such non-compliances, in the following format:</p>
+        <form id="question12-form">
+            <table id="complianceTable2">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Specify the law / regulation / guidelines which was not complied with</th>
+                    <th>Provide details of the non-compliance</th>
+                    <th>Any fines / penalties / action taken by regulatory agencies such as pollution control boards or by courts</th>
+                    <th>Corrective action taken, if any</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="serial_no[]"></td>
+                    <td><input type="text" name="law_compliance[]"></td>
+                    <td><input type="text" name="non_compliance_details[]"></td>
+                    <td><input type="text" name="action_taken[]"></td>
+                    <td><input type="text" name="corrective_action[]"></td>
+                </tr>
+            </table>
+            <button type="button" onclick="addRow('complianceTable2')">Add Row</button>
+        </form>
+        
+    </div>
+    <div class="button-container">    
+        <button class="submit-button" type="button" onclick="saveData()">Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

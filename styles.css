@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.Container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Container p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.Note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: red;
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px; /* Set height of the textarea */
+    font-size: 1.1em; /* Increase font size for better readability */
+    padding: 10px; /* Increase padding for better appearance */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border: 1px solid #46a2db; /* A light blue border for focus */
+    box-shadow: 0 0 5px rgba(70, 162, 219, 0.5); /* Light blue shadow for better visibility */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+.button-container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center text content inside container */
+}
+
+@media (max-width: 768px) {
+    .Container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+    }
+}
